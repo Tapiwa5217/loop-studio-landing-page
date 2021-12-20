@@ -84,6 +84,22 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
 }
 
+#top-section header #nav-menu nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  transition: .5s ease;
+}
+
+#top-section header #nav-menu nav ul li:hover::after {
+  background-color: white;
+  width: 70%;
+}
+
 #top-section header #nav-menu nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -153,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+#main-section #our-creation #creation-boxes .creation-box:hover {
+  cursor: pointer;
+}
+
 #main-section #our-creation #creation-boxes .creation-box h2 {
   position: absolute;
   bottom: 20px;
@@ -168,32 +188,104 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-deep-earth.jpg");
 }
 
+#main-section #our-creation #creation-boxes .box-1:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-deep-earth.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-1:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
 #main-section #our-creation #creation-boxes .box-2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-night-arcade.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-2:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-night-arcade.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-2:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
 }
 
 #main-section #our-creation #creation-boxes .box-3 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-soccer-team.jpg");
 }
 
+#main-section #our-creation #creation-boxes .box-3:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-soccer-team.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-3:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
 #main-section #our-creation #creation-boxes .box-4 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-grid.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-4:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-grid.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-4:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
 }
 
 #main-section #our-creation #creation-boxes .box-5 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-from-above.jpg");
 }
 
+#main-section #our-creation #creation-boxes .box-5:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-from-above.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-5:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
 #main-section #our-creation #creation-boxes .box-6 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-pocket-borealis.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-6:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-pocket-borealis.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-6:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
 }
 
 #main-section #our-creation #creation-boxes .box-7 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-curiosity.jpg");
 }
 
+#main-section #our-creation #creation-boxes .box-7:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-curiosity.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-7:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
 #main-section #our-creation #creation-boxes .box-8 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url("../images/mobile/image-fisheye.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-8:hover {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url("../images/desktop/image-fisheye.jpg");
+}
+
+#main-section #our-creation #creation-boxes .box-8:hover h2 {
+  color: black;
+  text-shadow: 0 0 1px black;
 }
 
 #main-section #our-creation #see-all {
@@ -211,6 +303,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   letter-spacing: 2px;
   color: #222;
+}
+
+#main-section #our-creation #see-all a:hover {
+  color: white;
+  background-color: black;
+  transition: .5s ease-in-out;
 }
 
 footer {
@@ -241,6 +339,24 @@ footer #footer-nav ul {
 footer #footer-nav ul li {
   color: #ccc;
   margin: 5px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+footer #footer-nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  transition: .5s ease;
+}
+
+footer #footer-nav ul li:hover::after {
+  background-color: white;
+  width: 70%;
 }
 
 footer #footer-socials {
@@ -253,6 +369,23 @@ footer #footer-socials {
 
 footer #footer-socials a {
   margin: 0 10px;
+  position: relative;
+}
+
+footer #footer-socials a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  transition: .5s ease;
+}
+
+footer #footer-socials a:hover::after {
+  background-color: white;
+  width: 70%;
 }
 
 footer #copy-text {
@@ -476,6 +609,7 @@ footer #copy-text p {
     font-size: 1.2rem;
     padding: 5px 10px;
     list-style-type: none;
+    position: relative;
   }
   body #top-section header #nav-menu nav ul li a {
     text-decoration: none;

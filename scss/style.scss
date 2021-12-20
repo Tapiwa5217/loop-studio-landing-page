@@ -53,6 +53,26 @@ header {
                 padding: 5px 0;
                 list-style-type: none;
 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 52%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 2px;
+                    transition: .5s ease;
+
+                }
+
+                &:hover {
+
+                    &::after {
+                       background-color: map-get($primary-colors, "White" );
+                       width: 70%; 
+                    }
+                }
+
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
@@ -127,6 +147,10 @@ header {
                     background-repeat: no-repeat;
                     background-size: cover;
 
+                    &:hover {
+                        cursor: pointer;
+                    }
+
                     h2 {
                         position: absolute;
                         bottom: 20px;
@@ -141,35 +165,100 @@ header {
 
                 .box-1 {
                     background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-deep-earth.jpg');
-                   
+
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-deep-earth.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
+               
                 }
                 .box-2 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-night-arcade.jpg');
                    
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-night-arcade.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-3 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-soccer-team.jpg');
                   
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-soccer-team.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-4 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-grid.jpg');
                    
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-grid.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-5 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-from-above.jpg');
                    
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-from-above.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-6 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-pocket-borealis.jpg');
                    
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-pocket-borealis.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-7 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-curiosity.jpg');
-         
+        
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-curiosity.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
                 .box-8 {
                     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(7, 7, 7, 0)), url('../images/mobile/image-fisheye.jpg');
         
+                    &:hover {
+                        background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(182, 182, 182, 0.7)), url('../images/desktop/image-fisheye.jpg');
+                    
+                        h2 {
+                            color:black;
+                            text-shadow: 0 0 1px black;
+                        }
+                    }
                 }
             }
 
@@ -187,6 +276,12 @@ header {
                     text-decoration: none;
                     letter-spacing: 2px;
                     color: #222;
+
+                    &:hover {
+                        color: map-get($primary-colors, "White");
+                        background-color: black;
+                        transition: .5s ease-in-out;
+                    }
                 }
             }
     }
@@ -214,6 +309,29 @@ footer {
             li {
                 color: #ccc;
                 margin: 5px 0;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 52%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 2px;
+                    transition: .5s ease;
+
+                }
+
+                &:hover {
+
+                    &::after {
+                       background-color: map-get($primary-colors, "White" );
+                       width: 70%; 
+                    }
+                }
+
             }
         }
     }
@@ -224,6 +342,28 @@ footer {
 
         a {
             margin: 0 10px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 52%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                transition: .5s ease;
+
+            }
+
+            &:hover {
+
+                &::after {
+                   background-color: map-get($primary-colors, "White" );
+                   width: 70%; 
+                }
+            }
+
         }
     }
 
@@ -471,6 +611,8 @@ footer {
                         font-size: 1.2rem;
                         padding: 5px 10px;
                         list-style-type: none;
+                        position: relative;
+
         
                         a {
                             text-decoration: none;
